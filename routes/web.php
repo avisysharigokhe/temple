@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('admin','App\Http\Controllers\AdminController@login')->name('admin_login');
+Route::get('login','App\Http\Controllers\AdminController@login')->name('admin_login_page');
+Route::get('forgot-password','App\Http\Controllers\AdminController@forgot_password')->name('admin_forgot_password_page');
+Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('dashboard');
+
+ 
 Route::get('/', function () {
     return view('welcome');
 });

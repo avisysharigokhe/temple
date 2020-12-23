@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html @lang('en')>
 <head>
- @include('backend/')
- @include('partials/_css')
+
+ @include('backend/common/header')
+ @include('backend/common/css')
+  
 </head>
 
-<body id="page-top" >
-   @include('partials/_nav')
+<body id="hold-transition sidebar-mini layout-fixed" >
+  
 
-<div >
+<div class="wrapper" >
+   @include('backend/common/navbar')
   @yield('content')
 </div>
 
-  @include('partials/_footer')
-  @include('partials/_script')
+  @include('backend/common/footer')
+  @include('backend/common/script')
 
 @yield('script')
  </body>
