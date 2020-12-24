@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('login','App\Http\Controllers\AdminController@login')->name('admin_login_page');
 Route::get('forgot-password','App\Http\Controllers\AdminController@forgot_password')->name('admin_forgot_password_page');
+Route::post('submit_forgot_password','App\Http\Controllers\AdminController@submit_forgot_password');
 Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('dashboard');
+Route::post('submit_login','App\Http\Controllers\AdminController@submit_login');
+Route::get('logout','App\Http\Controllers\AdminController@logout');
 
- 
 Route::get('/', function () {
     return view('welcome');
 });
