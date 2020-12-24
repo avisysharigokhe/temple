@@ -17,7 +17,5 @@ Route::get('forgot-password','App\Http\Controllers\AdminController@forgot_passwo
 Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('dashboard');
 
  
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','App\Http\Controllers\FrontendController@index');
 
