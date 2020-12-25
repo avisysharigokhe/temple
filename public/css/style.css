@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-content {
-  background: rgba(4, 4, 4, 0.7);
+  background: rgba(108 112 114 / 32%);
   padding: 20px;
   color: #fff;
   -webkit-animation-duration: .5s;
