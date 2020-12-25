@@ -36,7 +36,7 @@
 
    <div class="alert alert-success alert-dismissible">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Danger!</strong> {{ Session::get('message') }}
+    <strong>Success!</strong> {{ Session::get('message') }}
   </div>
   @endif
 
