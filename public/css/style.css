@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-content h2 {
   color: #fff;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   font-size: 28px;
   font-weight: 700;
 }
