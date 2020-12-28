@@ -1,0 +1,13 @@
+.custom-card {
+	box-shadow: none;
+    margin-bottom: 0rem;
+}
+
+.error {
+	color:red;
+	border-color: red !important;
+}
+label#event_photo-error {
+    display: block;
+}
+

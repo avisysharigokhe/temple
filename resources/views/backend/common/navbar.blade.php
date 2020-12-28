@@ -149,7 +149,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="{{url('dashboard')}}" class="nav-link active">
+            <a href="{{url('dashboard')}}" class="nav-link {{ (Request::is('dashboard') ? 'active' : '') }} ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -157,8 +157,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('events')}}" class="nav-link">
-              <!-- <i class="nav-icon fas fa-tachometer-alt"></i> -->
+            <a href="{{url('events')}}" class="nav-link {{ (Request::is('events') || Request::is('add-event') ? 'active' : '') }} ">
               <i class="nav-icon fa fa-calendar-o" aria-hidden="true"></i>
               <p>
                 Events/Functions
@@ -166,7 +165,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('news')}}" class="nav-link ">
+            <a href="{{url('news')}}" class="nav-link {{ (Request::is('news') ? 'active' : '') }} ">
               <i class="nav-icon fa fa-newspaper-o"></i>
               <p>
                 News & Announcement
@@ -174,7 +173,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview ">
-            <a href="{{url('aboutus')}}" class="nav-link ">
+            <a href="{{url('aboutus')}}" class="nav-link {{ (Request::is('aboutus') ? 'active' : '') }}">
               <i class="nav-icon fa fa-info"></i>
               <p>
                 About Us
@@ -183,13 +182,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('about_vidyapati')}}" class="nav-link ">
+                <a href="{{url('about_vidyapati')}}" class="nav-link {{ (Request::is('about_vidyapati') ? 'active' : '') }}">
                   <i class="fa fa-info nav-icon"></i>
                   <p>About Vidyapati</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('about_temple')}}" class="nav-link">
+                <a href="{{url('about_temple')}}" class="nav-link {{ (Request::is('about_temple') ? 'active' : '') }}">
                   <i class="fa fa-info nav-icon"></i>
                   <p>About Temple</p>
                 </a>
@@ -199,7 +198,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{url('history')}}" class="nav-link">
+            <a href="{{url('history')}}" class="nav-link {{ (Request::is('history') ? 'active' : '') }}">
               <i class="nav-icon fa fa-history"></i>
               <p>
                 History
@@ -208,7 +207,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{url('literatur')}}" class="nav-link">
+            <a href="{{url('literatur')}}" class="nav-link {{ (Request::is('about_vidyapati') ? 'active' : '') }}">
               <i class="nav-icon fa fa-book"></i>
               <p>
                 E Literatur
@@ -217,7 +216,7 @@
           </li>
 
           <li class="nav-item has-treeview ">
-            <a href="{{url('gallery')}}" class="nav-link ">
+            <a href="{{url('gallery')}}" class="nav-link  {{ (Request::is('gallery') ? 'active' : '') }}">
               <i class="nav-icon fa fa-image"></i>
               <p>
                 Media Gallery
@@ -226,13 +225,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('photos')}}" class="nav-link ">
+                <a href="{{url('photos')}}" class="nav-link  {{ (Request::is('photos') ? 'active' : '') }}">
                   <i class="fa fa-image nav-icon"></i>
                   <p>Photo Gallery</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('videos')}}" class="nav-link">
+                <a href="{{url('videos')}}" class="nav-link {{ (Request::is('videos') ? 'active' : '') }}">
                   <i class="fa fa-video-camera nav-icon"></i>
                   <p>Video Gallery</p>
                 </a>
@@ -242,7 +241,7 @@
           </li>
 
            <li class="nav-item has-treeview ">
-            <a href="{{url('contact_us')}}" class="nav-link ">
+            <a href="{{url('contact_us')}}" class="nav-link  {{ (Request::is('contact_us') ? 'active' : '') }}">
               <i class="nav-icon fa fa-mobile"></i>
               <p>
                 Contact Us
@@ -251,13 +250,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('address')}}" class="nav-link ">
+                <a href="{{url('address')}}" class="nav-link  {{ (Request::is('address') ? 'active' : '') }}">
                   <i class="fa fa-location-arrow nav-icon"></i>
                   <p>Address</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('location')}}" class="nav-link">
+                <a href="{{url('location')}}" class="nav-link {{ (Request::is('location') ? 'active' : '') }}">
                   <i class="fa fa-map-marker nav-icon"></i>
                   <p>Google Map location</p>
                 </a>
@@ -267,7 +266,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{url('nearby')}}" class="nav-link">
+            <a href="{{url('nearby')}}" class="nav-link {{ (Request::is('nearby') ? 'active' : '') }}">
               <i class="nav-icon fa fa-area-chart"></i>
               <p>
                 Places Around/Near By
@@ -275,7 +274,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('profile')}}" class="nav-link">
+            <a href="{{url('profile')}}" class="nav-link {{ (Request::is('profile') ? 'active' : '') }}">
               <i class="nav-icon fa fa-user"></i>
               <p>
                 Profile
@@ -283,7 +282,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('logout')}}" class="nav-link">
+            <a href="{{url('logout')}}" class="nav-link ">
               <i class="nav-icon fa fa-sign-out"></i>
               <p>
                 Logout

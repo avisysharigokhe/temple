@@ -8,7 +8,6 @@
 </head>
 
 <body id="hold-transition sidebar-mini layout-fixed" >
-  
 
 <div class="wrapper" >
    @include('backend/common/navbar')
@@ -16,6 +15,7 @@
 </div>
 
   @include('backend/common/footer')
+  @include('backend/common/bootsrap-modal')
   @include('backend/common/script')
 
 @yield('script')

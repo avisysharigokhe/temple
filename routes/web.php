@@ -19,6 +19,8 @@ Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('
 Route::post('submit_login','App\Http\Controllers\AdminController@submit_login');
 Route::get('logout','App\Http\Controllers\AdminController@logout');
 Route::get('events','App\Http\Controllers\EventController@index');
+Route::get('add-event','App\Http\Controllers\EventController@add_event');
+Route::post('save_event','App\Http\Controllers\EventController@save_event');
 
 Route::get('/', function () {
     return view('welcome');

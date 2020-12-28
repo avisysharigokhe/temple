@@ -12,12 +12,12 @@
 
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Event</h1>
+            <h1 class="m-0 text-dark">Add Event</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Event</li>
+              <!-- <li class="breadcrumb-item"><a href="#">Events/Functions</a></li>
+              <li class="breadcrumb-item active">Add Event</li> -->
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -36,50 +36,60 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <section class="content">
+
       <div class="row">
-        
-        <!-- right column -->
-        <div class="col-md-12">
-         
-          <!-- /.box -->
-          <!-- general form elements disabled -->
-          <div class="box box-warning">
-            <!-- /.box-header -->
-            <div class="box-body">
-              <form role="form">
+        <div class="col-12">
+            <div class="card custom-card">
+              <div class="card-body">
+               <a href="{{url('/events')}}"><button class='btn btn-primary pull-right'><i class="fa fa-arrow-left"></i>  Back</button> </a>
+              </div>
+        </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_event')}}" class="add_event_form" >
+                {{ csrf_field() }}
                 <!-- text input -->
                 <div class="form-group">
-                  <label>Text</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
-                </div>
-                <div class="form-group">
-                  <label>Text Disabled</label>
-                  <input type="text" class="form-control" placeholder="Enter ..." disabled="">
+                  <label>Event Title</label>
+                  <input type="text"  name="event_title" id="event_title" class="form-control" placeholder="Title" >
+                  @if($errors->has('event_title'))
+				    <div class="error">{{ $errors->first('event_title') }}</div>
+				  @endif
                 </div>
 
                 <!-- textarea -->
                 <div class="form-group">
-                  <label>Textarea</label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  <label>Event Description</label>
+                  <textarea class="form-control" name="event_description" id="event_description" rows="3" placeholder="Description"></textarea>
+                  @if($errors->has('event_description'))
+				    <div class="error">{{ $errors->first('event_description') }}</div>
+				  @endif
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">                  
+                  <label for="exampleInputFile">Event Photo</label>
+                  <input type="file" name="event_photo" id="event_photo" >  
+                  @if($errors->has('event_photo'))
+				    <div class="error">{{ $errors->first('event_photo') }}</div>
+				  @endif                
                 </div>
                 <div class="form-group">
-                    <label for="start">Select date:</label>                
-                      <input type="date" id="date" name="date"
-                            value="YYYY-MM-DD">
-                   </div>
+                    <label for="start">Event Date</label>                
+                    <input type="text" id="event_date" name="event_date" class="form-control" >
+                    @if($errors->has('event_date'))
+				    <div class="error">{{ $errors->first('event_date') }}</div>
+				  @endif 
+                </div>
+                <input type="submit" id="save_event" name="save_event" class="btn btn-sm btn-primary
+                	" >
                 </div>
                 </div>
               </form>
+              </div>
             </div>
-            <!-- /.box-body -->
           </div>
-          <!-- /.box -->
-        </div>
-        <!--/.col (right) -->
+        
       </div>
       <!-- /.row -->
     </section>
