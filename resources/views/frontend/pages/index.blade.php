@@ -63,6 +63,16 @@
     </div>
   </section>
   <!-- End Hero -->
+  <!-- Border section Start  -->
+  <div class="container-fluide">
+    <div class="row">
+      <div class="col-lg-12">
+      <nav class="navbar navbar-expand-lg py-3 shadow rounded custom-border">
+      </div>
+      </div>
+    </div>
+</div>
+  <!-- Border section End -->
   <main id="main">
   <!-- ======= About Us Section ======= -->
   <section id="about-us" class="about-us">
@@ -73,8 +83,8 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="{{asset('/img/aboutus/about.jpg')}}">
+          <div class="col-lg-6 custom-imgg" data-aos="fade-right">         
+            <img src="{{asset('/img/aboutus/Background.png')}}">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
@@ -90,8 +100,19 @@
             <p class="font-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
-            </p>
-          </div>
+            </p>  
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>  <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>  
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>               
+          </div>          
         </div>
       </div>
     </section>
