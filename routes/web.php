@@ -30,7 +30,7 @@ Route::post('delete_event','App\Http\Controllers\EventController@delete_event');
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+ 
+Route::get('/','App\Http\Controllers\FrontendController@index');
 
