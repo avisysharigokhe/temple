@@ -19,8 +19,16 @@ Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('
 Route::post('submit_login','App\Http\Controllers\AdminController@submit_login');
 Route::get('logout','App\Http\Controllers\AdminController@logout');
 Route::get('events','App\Http\Controllers\EventController@index');
+
 Route::get('add-event','App\Http\Controllers\EventController@add_event');
+// Route::get('event/{event_id}/edit', 'App\Http\Controllers\EventController@edit_event');
+Route::post('update_event','App\Http\Controllers\EventController@update_event');
 Route::post('save_event','App\Http\Controllers\EventController@save_event');
+Route::post('update_event_status','App\Http\Controllers\EventController@update_event_status');
+Route::post('delete_event','App\Http\Controllers\EventController@delete_event');
+
+
+
 
 Route::get('/', function () {
     return view('welcome');

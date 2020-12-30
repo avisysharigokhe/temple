@@ -56,5 +56,30 @@ class EventController extends Controller
     		session()->flash('message',__('messages.add_event_success'));
     		return redirect('/events');
 	    }
-	}    	
+	}
+
+	// update event
+	public function update_event_status(Request $request) {
+		$Event = Event::find($request['id']);
+		$Event->status = ($request['status'] == 'active') ? 'inactive' : 'active';
+		$Event->save();
+		session()->flash('success','success');
+    	session()->flash('message',__('messages.update_event_success'));
+    	return response()->json(['success' => 'true'], 200);
+	}
+	// delete event
+	public function delete_event(Request $request) {
+		$Event = Event::find($request['id']);
+		$event_image = $Event->photo;
+		@unlink($event_image);
+		$Event->delete();
+		session()->flash('success','success');
+    	session()->flash('message',__('messages.update_event_success'));
+    	return response()->json(['success' => 'true'], 200);
+	}
+
+	// update event
+	public function update_event(Request $request){
+		dd($request->all());
+	}
  }

@@ -10,4 +10,7 @@
 label#event_photo-error {
     display: block;
 }
-
+.custom-scroll {
+	/*height: 100%;*/
+	/*overflow-y: scroll;*/
+}

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html @lang('en')>
 <head>
-
+	
  @include('backend/common/header')
  @include('backend/common/css')
   
 </head>
 
 <body id="hold-transition sidebar-mini layout-fixed" >
-
+<input type="hidden" id="base_url" value="{{url('/')}}">
 <div class="wrapper" >
    @include('backend/common/navbar')
   @yield('content')

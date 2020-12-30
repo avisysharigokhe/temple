@@ -18,7 +18,7 @@ class EventTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('status');
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->string('date');
             $table->timestamps();
 
