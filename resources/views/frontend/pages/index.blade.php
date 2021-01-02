@@ -123,8 +123,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</strong></h2>
-          <p>Laborum repudiandae omnis voluptatum consequatur mollitia ea est voluptas ut</p>
+          <h2>Events</strong></h2>
+          <p>Main Religious Events in Vidyapati Dham</p>
         </div>
 
         <div class="row">
@@ -218,7 +218,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Event Media</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -330,69 +330,7 @@
     </section>
     <!-- End Portfolio Section -->
 
-     <!-- ======= Our Clients Section ======= -->
-     <section id="clients" class="clients">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Clients</h2>
-        </div>
-
-        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-1.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-2.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-3.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-4.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-5.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-6.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-7.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{{asset('/img/clients/client-8.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Our Clients Section -->
+  
     </main>
     <!-- End #main -->
 

@@ -41,3 +41,4 @@
 <script src="{{asset('dist/js/custom.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+

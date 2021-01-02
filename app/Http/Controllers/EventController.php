@@ -70,16 +70,55 @@ class EventController extends Controller
 	// delete event
 	public function delete_event(Request $request) {
 		$Event = Event::find($request['id']);
-		$event_image = $Event->photo;
-		@unlink($event_image);
+		$event_image_url = $Event->photo;
+		$image_image_array = explode('/', $event_image_url);
+		@unlink(public_path('/upload').'/'.end($image_image_array));
+		
 		$Event->delete();
 		session()->flash('success','success');
-    	session()->flash('message',__('messages.update_event_success'));
+    	session()->flash('message',__('messages.delete_event_success'));
     	return response()->json(['success' => 'true'], 200);
 	}
 
 	// update event
 	public function update_event(Request $request){
-		dd($request->all());
+		$validate = array(
+	        'event_title' => 'required',
+	        'event_description' => 'required|min:50',
+	        'event_photo' => 'image|mimes:jpg,png,jpeg|max:2048',
+	        'event_date'  => 'required',
+		);
+    	$validatedData = Validator::make($request->all(),$validate);
+	    if($validatedData->fails()) {
+	      return redirect::back()->withErrors($validatedData);
+	    }else{
+	    	$event  = Event::find($request->event_id);
+	    	$event->name = $request->event_title;
+	    	$event->description = $request->event_description;
+	    	$event->date = $request->event_date;
+	    	if($request->event_photo){
+
+	    		// delete previous photo
+	    		$old_photo_url = $event->photo;
+				$old_photo_array = explode('/', $old_photo_url);
+				@unlink(public_path('/upload').'/'.end($old_photo_array));
+
+	    		// upload new image
+	    		$path = public_path('upload');
+		    	if(!File::isDirectory($path)){
+		    		// create directory if folder not exist
+			        File::makeDirectory($path, 0777, true, true);
+			    }
+			    $imageName = time().'.'.$request->event_photo->getClientOriginalExtension();
+				$request->event_photo->move(public_path('/upload'), $imageName);
+				$event->photo = URL::to('/public/upload').'/'.$imageName;
+	    	}
+
+	    	$event->updated_at = date('Y-m-d H:i:s');	
+	    	$event->save();
+	    	session()->flash('success','success');
+	    	session()->flash('message',__('messages.update_event_success'));
+	    	return redirect('/events');
+	    }	
 	}
  }

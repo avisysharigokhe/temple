@@ -165,7 +165,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('news')}}" class="nav-link {{ (Request::is('news') ? 'active' : '') }} ">
+            <a href="{{url('news')}}" class="nav-link {{ (Request::is('news') || Request::is('add-news') ? 'active' : '') }} ">
               <i class="nav-icon fa fa-newspaper-o"></i>
               <p>
                 News & Announcement
@@ -173,14 +173,14 @@
             </a>
           </li>
           <li class="nav-item has-treeview ">
-            <a href="{{url('aboutus')}}" class="nav-link {{ (Request::is('aboutus') ? 'active' : '') }}">
+            <a href="{{url('aboutus')}}" class="nav-link ">
               <i class="nav-icon fa fa-info"></i>
               <p>
                 About Us
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class="nav nav-treeview" style="display: {{ (Request::is('about_vidyapati') ||  Request::is('about_temple') ? 'block' : '')  }}">
               <li class="nav-item">
                 <a href="{{url('about_vidyapati')}}" class="nav-link {{ (Request::is('about_vidyapati') ? 'active' : '') }}">
                   <i class="fa fa-info nav-icon"></i>
@@ -273,6 +273,15 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{url('nearby')}}" class="nav-link {{ (Request::is('nearby') ? 'active' : '') }}">
+              <i class="nav-icon fa fa-bus"></i>
+              <p>
+                How to Reach
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="{{url('profile')}}" class="nav-link {{ (Request::is('profile') ? 'active' : '') }}">
               <i class="nav-icon fa fa-user"></i>

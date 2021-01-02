@@ -1,5 +1,5 @@
 @extends('backend.layout.main')
-@section('title','| Events ')
+@section('title','| News')
 @section('style')
 @endsection
 @section('content')
@@ -10,13 +10,13 @@
       <div class="container-fluid">
          <div class="row mb-2">
             <div class="col-sm-6">
-               <h1 class="m-0 text-dark">Add Event</h1>
+               <h1 class="m-0 text-dark">Add News</h1>
             </div>
             <!-- /.col -->
             <div class="col-sm-6">
                <ol class="breadcrumb float-sm-right">
-                  <!-- <li class="breadcrumb-item"><a href="#">Events/Functions</a></li>
-                     <li class="breadcrumb-item active">Add Event</li> -->
+                  <!-- <li class="breadcrumb-item"><a href="#">Newss/Functions</a></li>
+                     <li class="breadcrumb-item active">Add News</li> -->
                </ol>
             </div>
             <!-- /.col -->
@@ -41,59 +41,59 @@
                <div class="col-12">
                   <div class="card custom-card">
                      <div class="card-body">
-                        <a href="{{url('/events')}}"><button class='btn btn-primary pull-right'><i class="fa fa-arrow-left"></i>  Back</button> </a>
+                        <a href="{{url('/news')}}"><button class='btn btn-primary pull-right'><i class="fa fa-arrow-left"></i>  Back</button> </a>
                      </div>
                   </div>
                </div>
-
+               <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_news')}}" class="add_news_form" >
                <div class="col-12">
-                 <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_event')}}" class="add_event_form" >
                   <div class="card">
                      <div class="card-body">
-                       
+                        
                            {{ csrf_field() }}
                            <!-- text input -->
                            <div class="form-group">
-                              <label>Event Title</label>
-                              <input type="text"  name="event_title" id="event_title" class="form-control" placeholder="Title" >
-                              @if($errors->has('event_title'))
-                              <div class="error">{{ $errors->first('event_title') }}</div>
+                              <label>News Title</label>
+                              <input type="text"  name="news_title" id="news_title" class="form-control" placeholder="Title" >
+                              @if($errors->has('news_title'))
+                              <div class="error">{{ $errors->first('news_title') }}</div>
                               @endif
                            </div>
                            <!-- textarea -->
                            <div class="form-group">
-                              <label>Event Description</label>
-                              <textarea class="form-control" name="event_description" id="event_description" rows="3" placeholder="Description"></textarea>
-                              @if($errors->has('event_description'))
-                              <div class="error">{{ $errors->first('event_description') }}</div>
+                              <label>News Description</label>
+                              <textarea class="form-control" name="news_description" id="news_description" rows="3" placeholder="Description"></textarea>
+                              @if($errors->has('news_description'))
+                              <div class="error">{{ $errors->first('news_description') }}</div>
                               @endif
                            </div>
                            <div class="form-group">
-                              <label for="exampleInputFile">Event Photo</label>
-                              <input type="file" name="event_photo" id="event_photo" >  
-                              @if($errors->has('event_photo'))
-                              <div class="error">{{ $errors->first('event_photo') }}</div>
+                              <label for="exampleInputFile">News Photo</label>
+                              <input type="file" name="news_photo" id="news_photo" >  
+                              @if($errors->has('news_photo'))
+                              <div class="error">{{ $errors->first('news_photo') }}</div>
                               @endif                
                            </div>
                            <div class="form-group">
-                              <label for="start">Event Date</label>                
-                              <input type="text" id="event_date" name="event_date" class="form-control" >
-                              @if($errors->has('event_date'))
-                              <div class="error">{{ $errors->first('event_date') }}</div>
+                              <label for="start">News Date</label>                
+                              <input type="text" id="news_date" name="news_date" class="form-control" >
+                              @if($errors->has('news_date'))
+                              <div class="error">{{ $errors->first('news_date') }}</div>
                               @endif 
                            </div>
-                           <input type="submit" id="save_event" name="save_event" class="btn btn-sm btn-primary
+                           <input type="submit" id="save_news" name="save_news" class="btn btn-sm btn-primary
                               " >
+                                                     
                      </div>
                   </div>
-                  </form>
+                 
                </div>
+               </form>
             </div>
-            </section>
-      </div>
- </section>
+      </section>
+</div>
 <!-- /.row -->
-
+</section>
 <!-- /.row -->
 <!-- Main row -->
 <!-- /.row (main row) -->
