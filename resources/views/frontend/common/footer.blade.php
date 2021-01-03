@@ -6,7 +6,7 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <h3>Company</h3>
+        <h3>Vidyapati Dham</h3>
         <p>
           Vidyapati Dham <br>
           Samastipur, 06274<br>

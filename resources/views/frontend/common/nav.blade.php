@@ -13,8 +13,9 @@
 
           <li class="drop-down"><a href="">About</a>
             <ul>
-              <li><a href="{{url('/about_vidyapati')}}">About Vidyapati</a></li>
-              <li><a href="{{url('/about_temple')}}">About Temple</a></li>
+            <li><a href="{{url('/about_temple')}}">About Temple</a></li>
+              <li><a href="{{url('/about_vidyapati')}}">About Vidyapati Dham</a></li>
+              
             </ul>
           </li>
 

@@ -18,5 +18,21 @@
     .section-title h2 {
         letter-spacing: 10px;
     } 
-    
-    
+
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 50px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+
+.services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+    padding-top: 50px;
+}
+
+.services .icon-box p {
+    padding-bottom:10px;
+}

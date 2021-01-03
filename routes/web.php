@@ -46,5 +46,7 @@ Route::post('update_about_temple','App\Http\Controllers\AboutController@update_a
 
  
 Route::get('/','App\Http\Controllers\FrontendController@index');
-Route::get('contact_us','App\Http\Controllers\FrontendController@index');
+Route::get('contact_us','App\Http\Controllers\FrontendController@contact_us');
+Route::get('history','App\Http\Controllers\FrontendController@history');
+Route::get('near_by_place','App\Http\Controllers\FrontendController@near_by_place');
 
