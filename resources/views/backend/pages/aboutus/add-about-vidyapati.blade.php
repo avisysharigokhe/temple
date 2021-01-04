@@ -40,7 +40,7 @@
             <div class="col-12">
                <div class="card custom-card">
                   <div class="card-body">
-                     <a href="{{url('/about_vidyapati')}}"><button class='btn btn-primary pull-right'><i class="fa fa-arrow-left"></i>  Back</button> </a>
+                     <a href="{{url('/about-vidyapati')}}"><button class='btn btn-primary pull-right'><i class="fa fa-arrow-left"></i>  Back</button> </a>
                   </div>
                </div>
             </div>

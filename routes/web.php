@@ -31,18 +31,20 @@ Route::post('save_news','App\Http\Controllers\NewsController@save_news');
 Route::post('update_news_status','App\Http\Controllers\NewsController@update_news_status');
 Route::post('delete_news','App\Http\Controllers\NewsController@delete_news');
 
-Route::get('about_vidyapati','App\Http\Controllers\AboutController@about_vidyapati');
+Route::get('about-vidyapati','App\Http\Controllers\AboutController@about_vidyapati');
 Route::get('add_about_vidyapati','App\Http\Controllers\AboutController@add_about_vidyapati');
 Route::post('save_about_vidyapati','App\Http\Controllers\AboutController@save_about_vidyapati');
 Route::post('delete_about_vidyapati_description','App\Http\Controllers\AboutController@delete_about_vidyapati_description');
 Route::post('update_about_vidyapati','App\Http\Controllers\AboutController@update_about_vidyapati');
 
-Route::get('about_temple','App\Http\Controllers\AboutController@about_temple');
+Route::get('about-temple','App\Http\Controllers\AboutController@about_temple');
 Route::get('add_about_temple','App\Http\Controllers\AboutController@add_about_temple');
 Route::post('save_about_temple','App\Http\Controllers\AboutController@save_about_temple');
 Route::post('delete_about_temple_description','App\Http\Controllers\AboutController@delete_about_temple_description');
 Route::post('update_about_temple','App\Http\Controllers\AboutController@update_about_temple');
-
+Route::get('temple-history','App\Http\Controllers\HistoryController@index');
+Route::get('add_temple_history','App\Http\Controllers\HistoryController@add_temple_history');
+Route::post('save_temple_history_event','App\Http\Controllers\HistoryController@save_temple_history_event')
 
  
 Route::get('/','App\Http\Controllers\FrontendController@index');

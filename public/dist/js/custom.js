@@ -12,6 +12,9 @@
     $('#about_temple').DataTable({
       responsive: true
     });
+    $('#histories').DataTable({
+      responsive: true
+    });
   $('input[name="event_date"]').daterangepicker({
     singleDatePicker: true,
     timePicker: true,

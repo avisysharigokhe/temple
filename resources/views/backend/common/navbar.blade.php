@@ -180,15 +180,15 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview" style="display: {{ (Request::is('about_vidyapati') ||  Request::is('about_temple') ? 'block' : '')  }}">
+            <ul class="nav nav-treeview" style="display: {{ (Request::is('about-vidyapati') ||  Request::is('about-vidyapati') ? 'block' : '')  }}">
               <li class="nav-item">
-                <a href="{{url('about_vidyapati')}}" class="nav-link {{ (Request::is('about_vidyapati') ? 'active' : '') }}">
+                <a href="{{url('about-vidyapati')}}" class="nav-link {{ (Request::is('about-vidyapati') ? 'active' : '') }}">
                   <i class="fa fa-info nav-icon"></i>
                   <p>About Vidyapati</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('about_temple')}}" class="nav-link {{ (Request::is('about_temple') ? 'active' : '') }}">
+                <a href="{{url('about-temple')}}" class="nav-link {{ (Request::is('about-temple') ? 'active' : '') }}">
                   <i class="fa fa-info nav-icon"></i>
                   <p>About Temple</p>
                 </a>
@@ -198,7 +198,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{url('history')}}" class="nav-link {{ (Request::is('history') ? 'active' : '') }}">
+            <a href="{{url('temple-history')}}" class="nav-link {{ (Request::is('temple-history') ? 'active' : '') }}">
               <i class="nav-icon fa fa-history"></i>
               <p>
                 History
@@ -214,7 +214,6 @@
               </p>
             </a>
           </li>
-
           <li class="nav-item has-treeview ">
             <a href="{{url('gallery')}}" class="nav-link  {{ (Request::is('gallery') ? 'active' : '') }}">
               <i class="nav-icon fa fa-image"></i>
@@ -239,32 +238,18 @@
               
             </ul>
           </li>
-
-           <li class="nav-item has-treeview ">
-            <a href="{{url('contact_us')}}" class="nav-link  {{ (Request::is('contact_us') ? 'active' : '') }}">
-              <i class="nav-icon fa fa-mobile"></i>
-              <p>
-                Contact Us
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
+          <li class="nav-item">
                 <a href="{{url('address')}}" class="nav-link  {{ (Request::is('address') ? 'active' : '') }}">
                   <i class="fa fa-location-arrow nav-icon"></i>
                   <p>Address</p>
                 </a>
               </li>
-              <li class="nav-item">
+          <li class="nav-item">
                 <a href="{{url('location')}}" class="nav-link {{ (Request::is('location') ? 'active' : '') }}">
                   <i class="fa fa-map-marker nav-icon"></i>
                   <p>Google Map location</p>
                 </a>
               </li>
-              
-            </ul>
-          </li>
-
           <li class="nav-item">
             <a href="{{url('nearby')}}" class="nav-link {{ (Request::is('nearby') ? 'active' : '') }}">
               <i class="nav-icon fa fa-area-chart"></i>
