@@ -53,4 +53,5 @@ Route::get('newses','App\Http\Controllers\FrontendController@newses');
 Route::get('event_media','App\Http\Controllers\FrontendController@event_media');
 Route::get('about_temple','App\Http\Controllers\FrontendController@about_temple');
 Route::get('about_vpdh','App\Http\Controllers\FrontendController@about_vpdh');
+Route::get('about_ugna','App\Http\Controllers\FrontendController@about_ugna');
 

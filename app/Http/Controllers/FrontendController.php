@@ -33,4 +33,7 @@ class FrontendController extends Controller
     public function about_vpdh(){
         return view('frontend.pages.about_vpdh');
     }
+    public function about_ugna(){
+        return view('frontend.pages.about_ugna');
+    }
 }

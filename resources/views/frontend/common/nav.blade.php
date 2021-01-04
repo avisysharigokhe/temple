@@ -15,6 +15,7 @@
             <ul>
             <li><a href="{{url('/about_temple')}}">About Temple</a></li>
               <li><a href="{{url('/about_vpdh')}}">About Vidyapati</a></li>
+              <li><a href="{{url('/about_ugna')}}">About Ugna</a></li>
               
             </ul>
           </li>
@@ -34,6 +35,7 @@
         <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
         <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+        <a href="#" class="youtube"><i class="icofont-youtube"></i></i></a>
       </div>
 
     </div>
