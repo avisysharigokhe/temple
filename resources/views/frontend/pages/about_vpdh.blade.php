@@ -12,13 +12,12 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2>History</h2>
+      <h2>About Vidyapati</h2>
       <ol>
         <li><a href="index.html">Home</a></li>
-        <li>History</li>
+        <li>About Vidyapati</li>
       </ol>
     </div>
-
   </div>
 </section><!-- End Breadcrumbs -->
 
@@ -32,12 +31,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>History</strong></h2>
+          <h2>About Vidyapati</strong></h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6 custom-imgg" data-aos="fade-right">         
-            <img src="{{asset('/img/aboutus/Background.png')}}">
+            <img src="{{asset('/img/News/vidyapati11.jpg')}}">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
@@ -65,7 +64,8 @@
               magna aliqua.
             </p>               
           </div> 
-          <div class="col-lg-12 pt-4 pt-lg-0" data-aos="fade-left">
+
+          <div class="col-lg-12 pt-4 pt-lg-0 mt-4" data-aos="fade-left">
             <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in

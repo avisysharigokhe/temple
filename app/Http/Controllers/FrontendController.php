@@ -21,4 +21,16 @@ class FrontendController extends Controller
     public function near_by_place(){
         return view('frontend.pages.near_by_place');
     }
+    public function newses(){
+        return view('frontend.pages.newses');
+    }
+    public function event_media(){
+        return view('frontend.pages.event_media');
+    }
+    public function about_temple(){
+        return view('frontend.pages.about_temple');
+    }
+    public function about_vpdh(){
+        return view('frontend.pages.about_vpdh');
+    }
 }

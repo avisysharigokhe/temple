@@ -49,4 +49,8 @@ Route::get('/','App\Http\Controllers\FrontendController@index');
 Route::get('contact_us','App\Http\Controllers\FrontendController@contact_us');
 Route::get('history','App\Http\Controllers\FrontendController@history');
 Route::get('near_by_place','App\Http\Controllers\FrontendController@near_by_place');
+Route::get('newses','App\Http\Controllers\FrontendController@newses');
+Route::get('event_media','App\Http\Controllers\FrontendController@event_media');
+Route::get('about_temple','App\Http\Controllers\FrontendController@about_temple');
+Route::get('about_vpdh','App\Http\Controllers\FrontendController@about_vpdh');
 

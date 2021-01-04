@@ -155,7 +155,7 @@
               <div class="icon">
               <img src="{{url('/public/img/event1.jpg')}}">  
               </div>
-              <h4 class="text-title"><a href="">Savan</a></h4>
+              <h4 class="text-title"><a href="">Sawan</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>           
               <button type="button" id="btn" class="btn btn-primary text-center">Read More</button>
             </div>
@@ -212,9 +212,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Shivratri</li>
+              <li data-filter=".filter-card">Vidyapati Jayanti</li>
+              <li data-filter=".filter-web">Sawan</li>
             </ul>
           </div>
         </div>

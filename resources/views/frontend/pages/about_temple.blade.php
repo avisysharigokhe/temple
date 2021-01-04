@@ -12,10 +12,10 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2>History</h2>
+      <h2>About Temple</h2>
       <ol>
         <li><a href="index.html">Home</a></li>
-        <li>History</li>
+        <li>About Temple</li>
       </ol>
     </div>
 
@@ -32,7 +32,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>History</strong></h2>
+          <h2>About Temple</strong></h2>
         </div>
 
         <div class="row content">
