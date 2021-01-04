@@ -12,6 +12,9 @@
     $('#about_temple').DataTable({
       responsive: true
     });
+    $('#histories').DataTable({
+      responsive: true
+    });
   $('input[name="event_date"]').daterangepicker({
     singleDatePicker: true,
     timePicker: true,
@@ -300,7 +303,38 @@
 
         }
     });
-      
+    // add about temple history
+    $(".add_history_form").validate({
+        rules:{
+          history_title:{
+            required:true
+          },
+          history_description:{
+            required:true,
+            minlength:"50"
+
+          },
+          history_photos:{
+            // required:true,
+           extension: "jpg|jpeg|png"
+
+          }
+        },
+        messages:{
+          history_title:{
+            required:"please enter history title"  
+          },
+          history_description:{
+            required:"please enter history description",
+            minlength:"please enter at least 100 character about history description"
+          },
+          history_photos:{
+            required:"please enter history photo",
+            extension:"please upload jpg, jpeg or jpeg image only"
+          }
+
+        }
+    });  
     // $(document).on("click",".event_stataus",function() {
     //   $("#update_event").validate();
     // });
