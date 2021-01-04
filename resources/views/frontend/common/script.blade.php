@@ -12,3 +12,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('js/main.js')}}"></script>
+  <script src="{{asset('plugins/readmore/read_more.js')}}
+"></script>
+<script src="{{asset('dist/js/frontend.custom.js')}}
+"></script>

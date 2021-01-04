@@ -469,4 +469,6 @@
   $("#edit_about_temple_modal  #about_id").val($($this).attr('data-id'));
  }
 
- 
+
+
+  

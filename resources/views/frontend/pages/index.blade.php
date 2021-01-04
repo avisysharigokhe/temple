@@ -18,8 +18,15 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>Vidyapati Dham</span></h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <p>
+              Vidyapatidham is known worldwide as Nirvan Bhoomi of the celebrated Maithil
+               poet Vidyapati (1352 – 1448 AD), He was polyglot and polytheist. Though 
+               universally acclaimed for erotic compositions dedicated to the love sports 
+               of Radha- Krishna, his devotional compositions dedicated to Shiva- Shakti,
+                mother Ganges and other facets of nature are par-excellence as his literary 
+                contributions.
+              </p>
+              
             </div>
           </div>
         </div>
@@ -29,8 +36,12 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Vidyapati Smarak</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <p>
+              Vidyapatidham Smarak is known worldwide as Nirvan Bhoomi of the celebrated Maithil
+               poet Vidyapati (1352 – 1448 AD), He was polyglot and polytheist. Though 
+               universally acclaimed for erotic compositions dedicated to the love sports 
+              </p>
+              
             </div>
           </div>
         </div>
@@ -40,8 +51,14 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Vidyapati Ugna</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <p>
+              Folklore says that he was such a great devotee of Shiva that the lord was 
+              really pleased with him. And once He decided to come to live in his house
+               as a servant. As the servant He is said to have taken the name Ugna. 
+               At several places in the region, Lord Shiva is still worshipped by this
+                name.
+              </p>
+              
             </div>
           </div>
         </div>

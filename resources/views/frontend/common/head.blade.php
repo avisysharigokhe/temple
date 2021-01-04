@@ -23,6 +23,8 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('css/style.css')}}" rel="stylesheet">
+ 
+
 
 @yield('style')
 <title>Vidyapati | @yield('title')</title>
