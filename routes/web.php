@@ -44,7 +44,7 @@ Route::post('delete_about_temple_description','App\Http\Controllers\AboutControl
 Route::post('update_about_temple','App\Http\Controllers\AboutController@update_about_temple');
 Route::get('temple-history','App\Http\Controllers\HistoryController@index');
 Route::get('add_temple_history','App\Http\Controllers\HistoryController@add_temple_history');
-Route::post('save_temple_history_event','App\Http\Controllers\HistoryController@save_temple_history_event')
+Route::post('save_temple_history_event','App\Http\Controllers\HistoryController@save_temple_history');
 
  
 Route::get('/','App\Http\Controllers\FrontendController@index');

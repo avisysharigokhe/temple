@@ -23,7 +23,7 @@ class HistoryController extends Controller
     }
 
     // save history
-    public function save_temple_history_event(Request $request) {
+    public function save_temple_history(Request $request) {
     	$validate = array(
 	        'history_title' => 'required',
 	        'history_description' => 'required|min:50',
@@ -53,7 +53,7 @@ class HistoryController extends Controller
 	    	History::insert($history_array);
 	    	session()->flash('success','success');
     		session()->flash('message',__('messages.add_history_success'));
-    		return redirect('/events');
+    		return redirect('/temple-history');
 	    }
 	}
 }

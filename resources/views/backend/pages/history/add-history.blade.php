@@ -47,7 +47,7 @@
                </div>
 
                <div class="col-12">
-                 <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_temple_history_event')}}" class="add_event_form" >
+                 <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_temple_history')}}" class="add_history_form" >
                   <div class="card">
                      <div class="card-body">
                        
