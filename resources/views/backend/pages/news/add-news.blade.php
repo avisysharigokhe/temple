@@ -45,8 +45,9 @@
                      </div>
                   </div>
                </div>
-               <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_news')}}" class="add_news_form" >
                <div class="col-12">
+               <form role="form" method="post" enctype="multipart/form-data" action="{{url('/save_news')}}" class="add_news_form" >
+               
                   <div class="card">
                      <div class="card-body">
                         
@@ -62,7 +63,7 @@
                            <!-- textarea -->
                            <div class="form-group">
                               <label>News Description</label>
-                              <textarea class="form-control" name="news_description" id="news_description" rows="3" placeholder="Description"></textarea>
+                              <textarea class="textarea about_us_description" name="news_description" id="news_description" rows="3" placeholder="Description"></textarea>
                               @if($errors->has('news_description'))
                               <div class="error">{{ $errors->first('news_description') }}</div>
                               @endif
@@ -87,8 +88,9 @@
                      </div>
                   </div>
                  
-               </div>
+               
                </form>
+               </div>
             </div>
       </section>
 </div>

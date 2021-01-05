@@ -45,8 +45,15 @@ Route::post('update_about_temple','App\Http\Controllers\AboutController@update_a
 Route::get('temple-history','App\Http\Controllers\HistoryController@index');
 Route::get('add_temple_history','App\Http\Controllers\HistoryController@add_temple_history');
 Route::post('save_temple_history_event','App\Http\Controllers\HistoryController@save_temple_history');
+Route::get('about-ugna','App\Http\Controllers\AboutController@about_ugna');
+Route::get('add_about_ugna','App\Http\Controllers\AboutController@add_about_ugna');
+Route::post('save_about_ugna','App\Http\Controllers\AboutController@save_about_ugna');
+Route::post('update_about_ugna','App\Http\Controllers\AboutController@update_about_ugna');
+Route::post('delete_about_ugna_description','App\Http\Controllers\AboutController@delete_about_ugna_description');
 
- 
+
+
+
 Route::get('/','App\Http\Controllers\FrontendController@index');
 Route::get('contact_us','App\Http\Controllers\FrontendController@contact_us');
 Route::get('history','App\Http\Controllers\FrontendController@history');
@@ -56,4 +63,5 @@ Route::get('event_media','App\Http\Controllers\FrontendController@event_media');
 Route::get('about_temple','App\Http\Controllers\FrontendController@about_temple');
 Route::get('about_vpdh','App\Http\Controllers\FrontendController@about_vpdh');
 Route::get('about_ugna','App\Http\Controllers\FrontendController@about_ugna');
+
 

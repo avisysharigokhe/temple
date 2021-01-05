@@ -193,6 +193,12 @@
                   <p>About Temple</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{url('about-ugna')}}" class="nav-link {{ (Request::is('about-ugna') ? 'active' : '') }}">
+                  <i class="fa fa-info nav-icon"></i>
+                  <p>About Ugna</p>
+                </a>
+              </li>
               
             </ul>
           </li>

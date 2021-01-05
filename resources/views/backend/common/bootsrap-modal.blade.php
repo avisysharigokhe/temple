@@ -306,3 +306,78 @@
       
     </div>
   </div>
+
+  
+  <!-- View About Ugna Modal -->
+
+  <div class="modal fade" id="view_more_about_ugna_modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">View Description Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="about_description"></p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- Edit About Us Ugna Model -->
+
+    <div class="modal fade" id="edit_about_ugna_modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit About Ugna</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+           <form role="form" method="post" enctype="multipart/form-data" action="{{url('/update_about_ugna')}}" class="edit_about_ugna_form" >
+                {{ csrf_field() }}
+                <!-- text input -->
+                <div class="form-group">
+                  <label>About Title</label>
+                  <input type="text"  name="about_title" id="about_title" class="form-control" placeholder="Title" >
+                  @if($errors->has('about_title'))
+            <div class="error">{{ $errors->first('about_title') }}</div>
+          @endif
+                </div>
+
+                <!-- textarea -->
+                <div class="form-group">
+                  <label>News Description</label>
+                  <textarea class="textarea about_us_text_area" name="about_description"  id="about_description"
+                        placeholder="Place some text here"  ></textarea>
+                  @if($errors->has('about_description'))
+            <div class="error">{{ $errors->first('about_description') }}</div>
+          @endif
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">About Photo</label>
+                  <input type="file" name="about_photos" id="about_photos" >  
+                  @if($errors->has('about_photos'))
+            <div class="error">{{ $errors->first('about_photos') }}</div>
+          @endif                
+                </div>
+ 
+                
+                <input type="hidden" name="about_id" id="about_id" value="">
+                <button type="submit" id="update_about_ugna" name="update_about_ugna" class="btn btn-sm btn-primary
+                  "value="Update">Update</button>
+                </div>
+                </div>
+              </form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>

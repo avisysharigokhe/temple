@@ -13,5 +13,9 @@ return [
 	'update_about_vidyapati_success' => 'Information about Vidyapati has been successfully updated.',
 	'delete_about_temple_success'	=> 'Information about Temple has been successfully deleted.',
 	'update_about_temple_success'	=> 'Information about Vidyapati has been successfully updated.',
-	'add_history_success'	=>	'History about Temple has been successfully added.',		
-];	
+	'add_history_success'	=>	'History about Temple has been successfully added.',
+	'add_about_ugna_success' =>	'Information about Ugna has been successfully added.',
+	'delete_about_ugna_success' => 'Information about Ugna has been successfully deleted.',
+	'update_about_ugna_success' => 'Information about Ugna has been successfully updated.',
+];
+	

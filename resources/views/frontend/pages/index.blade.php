@@ -105,30 +105,34 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            Vidyapatidham is known worldwide as Nirvan Bhoomi of the celebrated Maithil
+             poet Vidyapati (1352 – 1448 AD), He was polyglot and polytheist. 
+             Though universally acclaimed for erotic compositions dedicated to the 
+              love sports of Radha- Krishna, his devotional compositions dedicated to 
+              Shiva- Shakti, mother Ganges and other facets of nature are par-excellence
+               as his literary contributions. 
+            </p>            
+            <p class="font-italic">
+            Light myriad attributes of Vidyapati his final ‘Mundane Resort’- Vidyapatidham
+            is agog with many legends for its bestowing phenomenal religious and
+             intellectual fervor.
+            </p>  
+            <p class="font-italic">
+            On attaining ripe age, he summoned his family member and expressed his wish
+             to breath his last in the lap of Mother Ganges, likewise arrangements were
+              made. They (along with Family members) travelled all over the night and 
+              reached at the place then known as Mow- Bazidpur at the dawn.
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-            </ul>
+
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>  
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>  <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>  
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>               
+
+            Vidyapati asked : "Tell me how far the Ganges is and how far?" "Thakurji,
+             close to quarter to two Kos." his companion responded. After this, a great
+              poet filled himself with confidence and told "Stop and keep the palanquin 
+              here. Ganga will come here.
+              </P>
+              <div  style="float: left;"><a href="{{url('/about_temple')}}" class="btn btn-sm btn-success">Read More</a></div>
+                          
           </div>          
         </div>
       </div>

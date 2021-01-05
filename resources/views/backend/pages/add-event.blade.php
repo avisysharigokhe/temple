@@ -61,13 +61,15 @@
                               @endif
                            </div>
                            <!-- textarea -->
+      
                            <div class="form-group">
-                              <label>Event Description</label>
-                              <textarea class="form-control" name="event_description" id="event_description" rows="3" placeholder="Description"></textarea>
-                              @if($errors->has('event_description'))
-                              <div class="error">{{ $errors->first('event_description') }}</div>
-                              @endif
-                           </div>
+                        <label for="start">Write About Event</label>  
+                        <textarea class="textarea about_us_text_area" name="event_description"  id="event_description"
+                        placeholder="Place some text here"  ></textarea>
+                        @if($errors->has('event_description'))
+                           <div class="error">{{ $errors->first('event_description') }}</div>
+                           @endif
+                        </div>
                            <div class="form-group">
                               <label for="exampleInputFile">Event Photo</label>
                               <input type="file" name="event_photo" id="event_photo" >  

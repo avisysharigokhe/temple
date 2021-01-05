@@ -15,6 +15,10 @@
     $('#histories').DataTable({
       responsive: true
     });
+    $('#about_ugna').DataTable({
+      responsive: true
+    });
+    
   $('input[name="event_date"]').daterangepicker({
     singleDatePicker: true,
     timePicker: true,
@@ -239,7 +243,7 @@
         }
     });
     
-      // add about vidyapati form
+      // edit about vidyapati form
     $(".edit_about_vidyapati_form").validate({
         rules:{
           about_title:{
@@ -335,6 +339,75 @@
 
         }
     });  
+
+    // add about vidyapati form
+    $(".add_about_ugna_form").validate({
+      rules:{
+        about_title:{
+          required:true
+        },
+        about_description:{
+          required:true,
+          minlength:"50"
+
+        },
+        about_photo:{
+          // required:true,
+         extension: "jpg|jpeg|png"
+
+        }
+      },
+      messages:{
+        about_title:{
+          required:"please enter about title"  
+        },
+        about_description:{
+          required:"please enter about description",
+          minlength:"please enter at least 100 character about description"
+        },
+        about_photo:{
+          required:"please enter about photo",
+          extension:"please upload jpg, jpeg or jpeg image only"
+        }
+
+      }
+  });
+
+  // edit about ugna form
+  $(".edit_about_ugna_form").validate({
+    rules:{
+      about_title:{
+        required:true
+      },
+      about_description:{
+        required:true,
+        minlength:"50"
+
+      },
+      about_photos:{
+        // required:true,
+       extension: "jpg|jpeg|png"
+
+      }
+    },
+    messages:{
+      about_title:{
+        required:"please enter about title"  
+      },
+      about_description:{
+        required:"please enter about description",
+        minlength:"please enter at least 100 character about description"
+      },
+      about_photos:{
+        required:"please enter about photo",
+        extension:"please upload jpg, jpeg or jpeg image only"
+      }
+
+    }
+});
+  
+
+
     // $(document).on("click",".event_stataus",function() {
     //   $("#update_event").validate();
     // });
@@ -445,6 +518,26 @@
       
   });  
 
+    // delete about us ugna
+    $(document).on("click",".delete_about_ugna_description",function() {
+      var isConfirm = confirm("Are you sure you want to delete this about description?");
+      if(isConfirm) {
+          var request = $.ajax({
+          url: base_url+"/delete_about_ugna_description",
+          type: "POST",
+          headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+          data: {id : $(this).attr('data-id')},
+          dataType: "json"
+        });
+        request.done(function(response) {
+            location.reload(true);
+        });
+      } else {
+        return false;
+      }
+      
+  }); 
+
  })
 
 
@@ -504,5 +597,16 @@
  }
 
 
+ function show_about_ugna_desc_detail($this){
+  $("#view_more_about_ugna_modal #about_description").html($($this).attr('data-description'))
+ }
 
-  
+
+
+  function set_about_ugna_data($this){
+    console.log($($this).attr('data-description'))
+    $("#edit_about_ugna_modal #about_title").val($($this).attr('data-name'))
+    $("#edit_about_ugna_modal  #about_description").summernote("code", $($this).attr('data-description'));
+   // $("#edit_about_vidyapati_modal  #about_description").val($($this).attr('data-description'))
+    $("#edit_about_ugna_modal  #about_id").val($($this).attr('data-id'));
+  }

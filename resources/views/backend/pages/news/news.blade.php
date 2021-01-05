@@ -71,7 +71,7 @@
                               <tr>
                                  <td>{{$i++}}</td>
                                  <td>{{$row->name}}</td>
-                                 <td><img class="direct-chat-img" src="{{$row->photo}}" alt="News Photo"></td>
+                                 <td><img class="direct-chat-img" src="{{(!empty($row->photo)) ?  $row->photo : url('/public/img/no-image.jpg')}}" alt="News Photo"></td>
                                  <td><a class="btn btn-sm btn-default" href="javasctipt:void(0)" onclick="show_news_desc_detail(this)" data-toggle="modal" data-target="#view_more_news_modal" title="View Detail" data-id="{{$row->id}}" data-name="{{$row->name}}"  data-description="{{$row->description}}" data-status="{{$row->status}}" data-photo="{{$row->photo}}" data-news_date="{{date('d-M-y g:i a',strtotime($row->date))}}">Read More</a></td>
                                  <td>{{date('d-M-y g:i a',strtotime($row->date))}}</td>
                                  <td>
