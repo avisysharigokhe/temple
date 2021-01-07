@@ -181,38 +181,7 @@
               <button type="button" id="btn" class="btn btn-primary text-center">Read More</button>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-              <img src="{{url('/public/img/event1.jpg')}}">                
-              </div>
-              <h4 class="text-title"><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>           
-              <button type="button" id="btn" class="btn btn-primary text-center">Read More</button>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-              <img src="{{url('/public/img/event1.jpg')}}">                
-              </div>
-              <h4 class="text-title"><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>           
-              <button type="button" id="btn" class="btn btn-primary text-center">Read More</button>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-              <img src="{{url('/public/img/event1.jpg')}}">  
-              </div>
-              <h4 class="text-title"><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>           
-              <button type="button" id="btn" class="btn btn-primary text-center">Read More</button>
-            </div>
-          </div>
+         
 
         </div>
 

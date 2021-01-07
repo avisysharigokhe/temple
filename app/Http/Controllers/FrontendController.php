@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\AboutUs;
+use App\Models\Event;
 class FrontendController extends Controller
 {
     public function index(){
@@ -25,7 +26,8 @@ class FrontendController extends Controller
         return view('frontend.pages.newses');
     }
     public function event_media(){
-        return view('frontend.pages.event_media');
+        $event_media_list = Event::all();
+        return view('frontend.pages.event_media',['event_media_list'=>$event_media_list]);
     }
     public function about_temple(){
         // Select about Us temple record from about_Us table

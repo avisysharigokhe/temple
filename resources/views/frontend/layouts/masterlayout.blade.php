@@ -13,6 +13,7 @@
 </div>
 
   @include('frontend.common/footer')
+    @include('frontend/common/bootsrap-modal')
   @include('frontend.common/script')
 
 @yield('script')
